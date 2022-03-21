@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:storage_flutter/CommonUtils.dart';
 
 void nn() async{
   // Obtain shared preferences.
@@ -95,6 +96,9 @@ class _MyHomePageState extends State<MyHomePage> {
       // _counter without calling setState(), then the build method would not be
       // called again, and so nothing would appear to happen.
       _counter++;
+      var fuck1=CommonUtils.chinaPhoneNumber("13207759669");
+      var fuck2=CommonUtils.chinaPhoneNumber("23207759669");
+      print(fuck2.toString()+fuck1.toString());
       nn();
     });
   }
